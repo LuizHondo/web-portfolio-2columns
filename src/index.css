@@ -3,8 +3,10 @@
 @import url(./components/App/Page.css);
 @import url(./components/Main/Main.css);
 @import url(./components/Nav/Nav.css);
-@import url(./components/Tiles/Tiles.css);
+@import url(./components/Home/Home.css);
+@import url(./components/Projects/Projects.css);
 @import url(./components/Contact/Contact.css);
+@import url(./components/Footer/Footer.css);
 
 :root {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -12,14 +14,13 @@
   line-height: 1.5;
   font-weight: 400;
   color: #0f172a;
-  background-color: #f6f7fb;
-  --text-primary: #e3e6dc;
+  background-color: black;
+  --text-primary: #e1f5f0;
   /* --muted: #64748b; */
   /* --panel: #ffffff; */
   /* --border: #e2e8f0; */
   --lightmode-highlight-text: linear-gradient(90deg, #1e3a8a, #3b82f6);
   /* --accent-strong: #1d4ed8; */
-  --shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -31,8 +32,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: radial-gradient(circle at 20% 20%, #f0f4ff 0, transparent 35%),
-    radial-gradient(circle at 80% 0, #e0f2fe 0, transparent 30%), #f6f7fb;
+  background-color: rgb(148, 64, 64);
 }
 
 #root {

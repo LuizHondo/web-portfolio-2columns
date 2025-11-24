@@ -1,0 +1,10 @@
+.projects__container {
+  display: flex;
+  height: 100%;
+}
+.projects__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+}

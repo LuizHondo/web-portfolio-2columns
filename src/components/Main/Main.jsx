@@ -1,10 +1,39 @@
+import { Routes, Route, useLocation } from "react-router-dom";
+import Home from "../Home/Home.jsx";
+import Projects from "../Projects/Projects.jsx";
+import Contact from "../Contact/Contact.jsx";
+
 function Main() {
+  const { pathname } = useLocation();
+
+  const getTitle = () => {
+    switch (pathname) {
+      case "/":
+        return "Início";
+      case "/home":
+        return "Início";
+      case "/projects":
+        return "Projetos";
+      case "/contact":
+        return "Contato";
+      default:
+        return "Início";
+    }
+  };
+
   return (
     <main className="main">
-      <h1 className="main__title">Main Content</h1>
-      <p className="main__text">
-        This is where the main content of the page will go.
-      </p>
+      <div className="main__title-content">
+        <h1 className="main__title">{getTitle()}</h1>
+        <div className="main__content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </div>
     </main>
   );
 }

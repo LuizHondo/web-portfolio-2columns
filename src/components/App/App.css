@@ -42,7 +42,6 @@
   background: linear-gradient(135deg, #2563eb, #60a5fa);
   color: #f8fafc;
   border: 1px solid var(--border);
-  box-shadow: var(--shadow);
 }
 
 .app__brand-text {
@@ -81,7 +80,6 @@
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 18px;
-  box-shadow: var(--shadow);
   padding: 1.5rem;
 }
 
@@ -103,13 +101,12 @@
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease,
-    border-color 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .button:hover {
   transform: translateY(-1px);
-  box-shadow: var(--shadow);
 }
 
 .button--primary {
@@ -120,7 +117,6 @@
 
 .button--primary:hover {
   background: var(--accent-strong);
-  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.25);
 }
 
 .button--ghost {

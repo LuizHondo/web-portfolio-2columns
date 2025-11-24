@@ -1,3 +1,30 @@
 .main {
   background-color: gray;
+  padding: 0;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: white;
+}
+.main__title-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: black;
+  height: 100%;
+}
+.main__title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+.main__text {
+  margin: 0;
+  font-size: 1rem;
+  color: lightgray;
 }

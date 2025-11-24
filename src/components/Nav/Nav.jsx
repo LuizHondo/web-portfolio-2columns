@@ -1,4 +1,5 @@
-import logo from "../../assets/images/logo.svg";
+import { NavLink } from "react-router-dom";
+import logo from "../../assets/images/logo.png";
 
 function Nav() {
   return (
@@ -8,19 +9,19 @@ function Nav() {
       </div>
       <ul className="nav__list">
         <li className="nav__item">
-          <a className="nav__link" href="#hero">
+          <NavLink className="nav__link" to="/">
             INÍCIO
-          </a>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <a className="nav__link" href="#projects">
+          <NavLink className="nav__link" to="/projects">
             PROJETOS
-          </a>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <a className="nav__link" href="#contact">
+          <NavLink className="nav__link" to="/contact">
             CONTATO
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>
