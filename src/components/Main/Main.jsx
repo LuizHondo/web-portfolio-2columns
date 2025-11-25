@@ -3,7 +3,7 @@ import Home from "../Home/Home.jsx";
 import Projects from "../Projects/Projects.jsx";
 import Contact from "../Contact/Contact.jsx";
 
-function Main() {
+function Main({ projects }) {
   const { pathname } = useLocation();
 
   const getTitle = () => {
@@ -29,7 +29,10 @@ function Main() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route
+              path="/projects"
+              element={<Projects projects={projects} />}
+            />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
