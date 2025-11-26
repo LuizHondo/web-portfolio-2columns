@@ -1,28 +1,27 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
+import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 function Slider({ homeProjects }) {
-  console.log("Recebi:", homeProjects);
-
-  if (!homeProjects) {
-    return <p>Nada foi passado para homeProjects 🚨</p>;
-  }
-
-  if (!Array.isArray(homeProjects)) {
-    return (
-      <p>homeProjects NÃO é um array. Tipo recebido: {typeof homeProjects}</p>
-    );
-  }
-
   return (
-    <Swiper className="swipper">
-      {homeProjects.map((project, index) => (
-        <SwiperSlide key={index}>
-          <img src={project.url} alt={project.title} />
+    <Swiper
+      slidesPerView={1}
+      spaceBetween={10}
+      loop={true}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Pagination, Navigation]}
+      className="swipper"
+    >
+      {homeProjects.map((homeProject, index) => (
+        <SwiperSlide key={index} className="swipper__item">
+          <img src={homeProject.url} alt={`Project ${index + 1}`} />
         </SwiperSlide>
       ))}
     </Swiper>

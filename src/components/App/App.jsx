@@ -31,6 +31,12 @@ const homeProjects = [
     title: "Dripping eye",
     url: "https://i.pinimg.com/736x/64/3b/4f/643b4f8e6e067781d4046fa00f7ae49d.jpg",
   },
+  {
+    title: "Guy in a suit",
+    url: "https://i.pinimg.com/736x/f2/a1/f5/f2a1f5a00ceefc664add2f820689bf57.jpg",
+    description:
+      "I have made this guy holding this tie to represent how breathless try to fit in feels some times",
+  },
 ];
 const projects = [
   {
