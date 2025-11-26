@@ -1,6 +1,7 @@
 .projects__container {
   display: flex;
   height: 100%;
+  flex-direction: column;
 }
 .projects__title {
   font-size: 2rem;

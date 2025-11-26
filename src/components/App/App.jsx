@@ -22,7 +22,16 @@ import Footer from "../Footer/Footer.jsx";
 //         setCards(normalizedCards);
 //       })
 //       .catch((err) => console.error('Error loading initial data:', err));
-
+const homeProjects = [
+  {
+    title: "Cat in a piano maneiro",
+    url: "https://i.pinimg.com/736x/b3/d4/40/b3d440f9ff37d267cae3bfe6ad65236d.jpg",
+  },
+  {
+    title: "Dripping eye",
+    url: "https://i.pinimg.com/736x/64/3b/4f/643b4f8e6e067781d4046fa00f7ae49d.jpg",
+  },
+];
 const projects = [
   {
     title: "Big hamsters",
@@ -54,7 +63,7 @@ function App() {
   return (
     <div className="page">
       <Nav />
-      <Main projects={projects} />
+      <Main projects={projects} homeProjects={homeProjects} />
       <Footer />
     </div>
   );

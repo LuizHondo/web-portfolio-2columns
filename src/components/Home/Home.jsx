@@ -1,9 +1,10 @@
-function Home() {
+import Slider from "../Slider/Slider.jsx";
+function Home({ homeProjects }) {
+  console.log("home " + homeProjects);
   return (
-    <div className="home_container">
-      <h2 className="home__title">Home Page</h2>
+    <div className="home__container">
       <div className="home__content">
-        Here we gonna have some awesome images sliding
+        <Slider homeProjects={homeProjects}></Slider>
       </div>
     </div>
   );

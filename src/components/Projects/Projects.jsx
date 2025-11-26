@@ -1,5 +1,4 @@
 function Projects({ projects }) {
-  console.log(projects);
   return (
     <div className="projects__container">
       <h2 className="projects__title">Projects Page</h2>

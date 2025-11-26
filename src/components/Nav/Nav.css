@@ -1,65 +1,124 @@
+@media (min-width: 600px) {
+  /* 📱 Smartphones maiores */
+}
+
+@media (min-width: 900px) {
+  /* 📟 Tablets / laptops pequenos */
+}
+
+@media (min-width: 1200px) {
+  /* 💻 Desktop padrão */
+}
+
 .nav {
   display: grid;
-  grid-template-rows: 150px auto;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  grid-template-rows: auto 1fr;
+  align-items: start;
+  justify-items: center;
+  gap: 1rem; /* menor gap para smartphones */
   height: 100%;
-  padding: 2rem 0.7rem;
+  padding: 1rem 0.75rem; /* reduzido no mobile */
   background: black;
   backdrop-filter: blur(8px);
-  min-width: 225px;
-  width: auto;
+  width: 100%;
+  max-width: none; /* mobile: ocupar toda largura */
+  min-width: 220px;
+  box-sizing: border-box;
 }
+
 .nav__logo {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  max-width: 160px; /* menor para mobile */
 }
-.nav__image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  overflow: visible;
 
-  padding: 20px;
-  display: flex;
+.nav__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .nav__list {
   display: flex;
+  flex-direction: row; /* mobile = mais comum row */
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: start;
-  gap: 0.6rem;
+  justify-content: center;
   list-style: none;
-  flex-direction: column;
-  height: 100%;
+  gap: 0.45rem;
   width: 100%;
   margin: 0;
-  padding: 0;
-  padding-top: 3rem;
+  padding: 0.5rem 0 0;
 }
 
 .nav__link {
   color: var(--text-primary);
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 1rem; /* mobile menor */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
-  padding: 0.45rem 1.3rem;
-  border-radius: 50px;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.1s ease;
+  transition: background-color 0.3s ease, color 0.1s ease,
+    border-color 0.2s ease;
   border: 1px solid white;
-  min-width: 250px;
-  width: 100%;
+  width: 10rem;
+  box-sizing: border-box;
 }
 
 .nav__link:hover {
   color: rgb(0, 0, 0);
   background: #eff4ff;
+}
+
+/* 🔸 TABLET — melhorando espaçamento e tipografia */
+@media (min-width: 600px) {
+  .nav {
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+
+  .nav__logo {
+    max-width: 200px;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .nav__link {
+    font-size: 1.1rem;
+    padding: 0.55rem 1rem;
+  }
+}
+
+/* 🔶 DESKTOP — estrutura original, mais “forte” visualmente */
+@media (min-width: 1200px) {
+  .nav {
+    grid-template-rows: auto 1fr;
+    padding: 2rem 1rem;
+    gap: 1.25rem;
+    width: 320px;
+  }
+
+  .nav__logo {
+    max-width: 240px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+
+  .nav__link {
+    width: 15rem;
+    font-size: 1.25rem;
+  }
 }

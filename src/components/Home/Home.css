@@ -1,14 +1,14 @@
 .home__container {
   display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
 .home__content {
-  margin: auto;
+  margin: 0;
   text-align: center;
-}
-.home__title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: white;
+  width: 1000px;
+  border: solid 1px red;
 }
