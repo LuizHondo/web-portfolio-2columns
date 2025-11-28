@@ -1,8 +1,18 @@
 function Projects({ projects }) {
+  function imageRenderer(image) {
+    return;
+  }
+
   return (
     <div className="projects__container">
       <div className="projects__content">
-        This is the Projects page content.
+        {projects.map((project, index) => (
+          <img
+            className="projects__image"
+            src={project.url}
+            alt={`Project ${index + 1}`}
+          />
+        ))}
       </div>
     </div>
   );

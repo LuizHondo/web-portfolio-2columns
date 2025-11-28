@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
   position: inherit;
+  border-radius: 15px;
 }
 .swipper__item {
   width: 100%;
@@ -16,10 +17,10 @@
   object-fit: cover;
   display: block;
 }
-@media (min-width: 900px) {
+@media screen and (min-width: 900px) {
   .swipper {
     max-width: 1000px;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
   }
