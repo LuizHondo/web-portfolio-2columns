@@ -4,7 +4,7 @@
 @import url(./components/Main/Main.css);
 @import url(./components/Nav/Nav.css);
 @import url(./components/Home/Home.css);
-@import url(./components/Slider/Slider.css);
+@import url(./components/Home/Slider/Slider.css);
 @import url(./components/Projects/Projects.css);
 @import url(./components/Contact/Contact.css);
 @import url(./components/Footer/Footer.css);
@@ -20,10 +20,16 @@
   /* --muted: #64748b; */
   /* --panel: #ffffff; */
   /* --border: #e2e8f0; */
-  --lightmode-highlight-text: linear-gradient(90deg, #1e3a8a, #3b82f6);
+  /* --lightmode-highlight-text: linear-gradient(90deg, #1e3a8a, #3b82f6); */
   /* --accent-strong: #1d4ed8; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+
+  /* swiper */
+  --swiper-theme-color: #fff; /* Tema principal */
+  --swiper-navigation-color: #fff; /* Setas */
+  --swiper-pagination-color: #fff; /* Bullets */
+  --swiper-scrollbar-drag-bg-color: #fff; /* Scroll drag */
 }
 
 * {

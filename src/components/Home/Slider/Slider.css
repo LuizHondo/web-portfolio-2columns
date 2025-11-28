@@ -1,0 +1,29 @@
+.swipper {
+  width: 100%;
+  height: auto;
+  position: inherit;
+}
+.swipper__item {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.swipper__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (min-width: 900px) {
+  .swipper {
+    max-width: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .swipper__item {
+    display: block;
+  }
+}

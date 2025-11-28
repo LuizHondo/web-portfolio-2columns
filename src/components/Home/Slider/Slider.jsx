@@ -10,7 +10,7 @@ function Slider({ homeProjects }) {
   return (
     <Swiper
       slidesPerView={1}
-      spaceBetween={10}
+      spaceBetween={0}
       loop={true}
       pagination={{
         clickable: true,
@@ -21,7 +21,11 @@ function Slider({ homeProjects }) {
     >
       {homeProjects.map((homeProject, index) => (
         <SwiperSlide key={index} className="swipper__item">
-          <img src={homeProject.url} alt={`Project ${index + 1}`} />
+          <img
+            className="swipper__image"
+            src={homeProject.url}
+            alt={`Project ${index + 1}`}
+          />
         </SwiperSlide>
       ))}
     </Swiper>

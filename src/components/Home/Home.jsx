@@ -1,6 +1,6 @@
-import Slider from "../Slider/Slider.jsx";
+import Slider from "./Slider/Slider";
+
 function Home({ homeProjects }) {
-  console.log("home " + homeProjects);
   return (
     <div className="home__container">
       <div className="home__content">
